@@ -1,2 +1,2 @@
 # euclid
-html header+/hero+/about-us+/stages+ -> questions/footer/
+html header+/hero+/about-us+/stages+/questions+/footer+/ 
