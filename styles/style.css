@@ -269,3 +269,57 @@ img {
 }
 
 /* stages */
+.stages__container {
+  margin-bottom: 100px;
+}
+.stages__wrapper {
+  justify-content: space-between;
+}
+
+.stages__title {
+  margin-bottom: 37px;
+}
+
+.stages__content {
+  flex-basis: 49%;
+  max-width: 760px;
+}
+
+.stages__subtitle {
+  margin-bottom: 10px;
+}
+
+.stages__descr {
+  margin: 0;
+  line-height: 2;
+}
+
+.stages__descr:nth-child(3) {
+  margin-bottom: 17px;
+}
+
+.stages__picture {
+  margin-top: 7px;
+  flex-basis: 49%;
+  background-image: url("../images/stages-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: var(--border-radius);
+}
+
+.stages__btn {
+  padding: 21px 40px;
+  font-weight: 400;
+}
+
+.stages__btn:not(:last-child) {
+  margin-right: 27px;
+}
+
+.stages__btn--transp {
+  padding: 21px 37px;
+  border: 1px solid var(--main-text);
+  color: var(--main-text);
+  background-color: transparent;
+}
