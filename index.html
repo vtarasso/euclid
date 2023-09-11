@@ -175,44 +175,44 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__left">
+  <footer class="footer" id="footer">
+    <div class="container footer__container flex">
+      <div class="footer__left flex">
         <a class="footer__logo" href="#">
           <img src="images/footer-logo.svg" alt="Логотип фирмы Евклид">
         </a>
 
-        <ul class="list-reset footer__items">
-          <li class="footer__items">
+        <ul class="list-reset footer__items flex">
+          <li class="footer__item">
             <a class="footer__link" href="#">О&nbsp;нас</a>
           </li>
 
-          <li class="footer__items">
+          <li class="footer__item">
             <a class="footer__link" href="#">Проекты</a>
           </li>
 
-          <li class="footer__items">
+          <li class="footer__item">
             <a class="footer__link" href="#">Отзывы</a>
           </li>
 
-          <li class="footer__items">
+          <li class="footer__item">
             <a class="footer__link" href="#">Договор оферты</a>
           </li>
 
-          <li class="footer__items">
+          <li class="footer__item">
             <a class="footer__link" href="#">Договор подряда</a>
           </li>
 
-          <li class="footer__items">
+          <li class="footer__item">
             <a class="footer__link" href="#">Конфиденциальность</a>
           </li>
 
-          <li class="footer__items">
+          <li class="footer__item">
             <a class="footer__link" href="#">Партнёрское соглашение</a>
           </li>
         </ul>
 
-        <ul class="list-reset footer__social social">
+        <ul class="list-reset footer__social social flex">
           <li class="social__item">
             <a class="social__link" href="#">
               <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -235,7 +235,7 @@
       <div class="footer__middle">
         <h2 class="footer__title">Оставить заявку</h2>
         <form class="footer__form form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-          <ul class="form__items">
+          <ul class="list-reset form__items">
             <li class="form__item">
               <label for="full-name">
                 <input class="form__input" id="full-name" name="full-name" type="text" placeholder="Фамилия, имя и отчество*" required>
@@ -250,7 +250,7 @@
 
             <li class="form__item">
               <label for="email">
-                <textarea class="form__input form__textarea" name="message" id="message" placeholder="сообщение" required></textarea>
+                <textarea class="form__input form__textarea" name="message" id="message" placeholder="Cообщение" required></textarea>
               </label>
             </li>
           </ul>
@@ -260,9 +260,9 @@
               Отправить данные
             </button>
 
-            <label class="form__checkbox custom-checbox">
-              <input class="custom-checbox__input" type="checkbox" required>
-              <span class="custom-checbox__text">
+            <label class="form__checkbox custom-checkbox">
+              <input class="custom-checkbox__input" type="checkbox" required>
+              <span class="custom-checkbox__text">
                 Согласен на&nbsp;обработку данных
               </span>
             </label>

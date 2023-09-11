@@ -326,7 +326,7 @@ img {
 
 /* questions */
 .questions__container {
-  margin-bottom: 101px;
+  margin-bottom: 97px;
 }
 
 .questions__items {
@@ -357,3 +357,139 @@ img {
 }
 
 /* footer */
+.footer {
+  color: var(--footer-text);
+  background-color: var(--main-text);
+}
+
+.footer__container {
+  padding: 50px 0;
+  justify-content: space-between;
+}
+
+.footer__left {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 21%;
+}
+
+.footer__middle {
+  padding: 3px 6px 0 8px;
+  width: 33%;
+}
+
+.footer__right {
+  padding-top: 88px;
+  padding-left: 9px;
+  width: 21%;
+}
+
+.footer__logo {
+  margin-bottom: 17px;
+}
+
+.footer__items {
+  margin-bottom: 90px;
+  flex-direction: column;
+}
+
+.footer__item {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.footer__title {
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: 4.8rem;
+  font-weight: 400;
+}
+
+.form__items {
+  margin-bottom: 30px;
+}
+
+.form__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.form__input {
+  padding: 20px 24px;
+  width: 100%;
+  color: var(--footer-text);
+  background-color: var(--form-color);
+  border: none;
+  border-radius: 16px;
+}
+
+.form__textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+.footer__btn {
+  margin-right: 18px;
+  padding: 20px 52px;
+}
+
+.footer__descr {
+  margin: 0;
+  line-height: 2;
+}
+
+/* custom-checkbox */
+.custom-checkbox {
+  user-select: none;
+  cursor: pointer;
+}
+
+.custom-checkbox__input {
+  position: absolute;
+  appearance: none;
+}
+
+.custom-checkbox__text {
+  position: relative;
+  padding-left: 18px;
+}
+
+.custom-checkbox__text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--footer-text);
+  transform: translateY(-50%);
+}
+
+.custom-checkbox__text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/check.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.custom-checkbox__input:checked + .custom-checkbox__text::after{
+  opacity: 1;
+}
+
+.custom-checkbox__input:focus + .custom-checkbox__text {
+  outline: 1px solid var(--btn-color);
+  outline-offset: 3px;
+}
