@@ -254,6 +254,7 @@
   }
 
   .stages__picture {
+    margin-top: 0;
     margin-bottom: 41px;
     min-height: 284px;
   }
@@ -296,5 +297,338 @@
 
   .footer__left {
     width: 34%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .header {
+    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 50px;
+}
+
+  .header__nav {
+    margin-right: 0;
+    width: 100%;
+    order: 1;
+  }
+
+  .header__items {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --border-radius: 16px;
+  }
+
+  .section-title {
+    margin-bottom: 21px;
+    font-size: 2.4rem;
+  }
+
+  .section-subtitle {
+    margin-bottom: 4px;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .btn {
+    padding: 14px 28px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  /* header */
+  .header {
+    padding-top: 17px;
+    padding-bottom: 30px;
+  }
+
+  .header__container {
+    gap: 9px;
+  }
+
+  .header__items {
+    gap: 26px;
+  }
+
+  /* hero */
+  .hero__container {
+    padding-top: 20px;
+  }
+
+  .hero__wrapper {
+    margin-bottom: 60px;
+    padding: 60px 22px;
+  }
+
+  .hero__content {
+    text-align: center;
+  }
+
+  .hero__title {
+    margin-bottom: 9px;
+    font-size: 2rem;
+  }
+
+  .hero__descr {
+    margin-bottom: 33px;
+    font-size: 1.2rem;
+  }
+
+  /* about-us */
+  .about-us__descr {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+  }
+
+  .about-us__left {
+    position: relative;
+    margin-bottom: 160px;
+    max-width: 100%;
+    min-height: 200px;
+  }
+
+  .box {
+    padding: 0;
+    flex-direction: column;
+    border: none;
+  }
+
+  .box__descr {
+    max-width: 100%;
+    font-size: 1.4rem;
+  }
+
+  .box__decor {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 114px;
+    height: 70px;
+    background-position: left center;
+  }
+
+  .box__decor--cube {
+    background-image: url("../images/about-us-mobile-1.svg");
+  }
+
+  .box__decor--gear {
+    background-image: url("../images/about-us-mobile-2.svg");
+  }
+
+  .about-us__box {
+    position: absolute;
+    bottom: -130px;
+    left: 0;
+    padding: 0px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    background-color: transparent;
+  }
+
+  .box__descr--color {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--main-text);
+  }
+
+  .box__btn {
+    padding: 11px 43px;
+    border-radius: 8px;
+    border-width: 2px;
+    font-size: 12px;
+    font-style: normal;
+    color: var(--btn-color);
+  }
+
+  /* qustions */
+  .questions__item {
+    padding: 0;
+    text-align: left;
+    border: none;
+  }
+
+  /* footer */
+  .footer__container {
+    padding-top: 30px;
+  }
+
+  .footer__title {
+    text-align: center;
+  }
+
+  .footer__middle {
+    width: 100%;
+  }
+
+  .form__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__item {
+    width: 85%;
+  }
+
+  .form__input {
+    width: 100%;
+    min-width: 290px;
+  }
+
+  .footer__check {
+    flex-direction: column;
+  }
+
+  .footer__left {
+    padding-top: 25px;
+    padding-bottom: 30px;
+    width: 100%;
+    align-items: center;
+    border-top: 1px solid var(--form-color);
+  }
+}
+
+@media (max-width: 480px) {
+  /* header */
+  .header {
+    padding-bottom: 76px;
+  }
+  .header__nav {
+    display: none;
+  }
+  /* about-us */
+  .about-us__container {
+    margin-bottom: 61px;
+  }
+
+  .about-us__left {
+    margin-bottom: 220px;
+  }
+
+  .about-us__box {
+    bottom: -200px;
+  }
+
+  .box__decor {
+    margin-bottom: 3px;
+    background-size: 64px 49px;
+  }
+
+  .box__title {
+    letter-spacing: 0.1px;
+  }
+
+  .box:first-child {
+    margin-bottom: 23px;
+  }
+
+  /* stages */
+  .stages__container {
+    margin-bottom: 60px;
+  }
+
+  .stages__picture {
+    margin-bottom: 20px;
+    min-height: 160px;
+  }
+
+  .stages__subtitle {
+    margin-bottom: 14px;
+  }
+
+  .stages__descr {
+    font-size: 1.4rem;
+  }
+
+  .stages__btn:not(:last-child) {
+    margin-right: 6px;
+  }
+
+  .stages__btn {
+    padding: 14px 45px;
+  }
+
+  .stages__btn--transp {
+    padding: 12px 31px;
+  }
+
+  /* questions */
+  .questions__container {
+    margin-bottom: 60px;
+  }
+  .questions__items {
+    gap: 33px;
+  }
+
+  .questions__subtitle {
+    letter-spacing: 0.2px;
+  }
+  .questions__descr {
+    font-size: 1.4rem;
+  }
+  /* footer */
+  .footer__middle {
+    margin-bottom: 31px;
+  }
+
+  .footer__title {
+    margin-bottom: 21px;
+    padding-left: 0;
+    font-size: 2.4rem;
+    text-align: left;
+  }
+
+  .form__items {
+    margin-bottom: 21px;
+  }
+
+  .form__item {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  .form__input {
+    padding: 22px 20px;
+    max-width: 290px;
+    min-width: 290px;
+  }
+
+  .footer__btn {
+    padding: 14px 19px;
+  }
+
+  .footer__check {
+    gap: 18px;
+  }
+
+  .footer__left {
+    padding-top: 16px;
+    padding-bottom: 18px;
+  }
+
+  .footer__logo {
+    margin-bottom: 2px;
+    max-width: 131px;
+  }
+
+  .social__link svg {
+    max-width: 40px;
+  }
+
+  .social__item:not(:last-child) {
+    margin-right: 17px;
   }
 }

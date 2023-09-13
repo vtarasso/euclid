@@ -370,6 +370,14 @@ img {
   background-repeat: no-repeat;
 }
 
+.box__decor--cube {
+  background-image: url("images/about-us-icon-1.svg");
+}
+
+.box__decor--cube {
+  background-image: url("images/about-us-icon-2.svg");
+}
+
 /* stages */
 .stages__container {
   margin-bottom: 100px;
