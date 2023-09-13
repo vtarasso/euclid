@@ -1,0 +1,186 @@
+@media (max-width: 1920px) {
+  .footer__check {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1400px) {
+  .hero__content {
+    max-width: 60%;
+  }
+
+  .box {
+    padding:30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0  50px;
+  }
+
+  /* header */
+  .header {
+    margin: 0;
+    padding: 26px 0 21px;
+  }
+
+  .header__logo {
+    max-width: 152px;
+  }
+
+  .header__items {
+    gap: 60px;
+  }
+
+  .header__nav {
+    margin-right: 105px;
+  }
+
+  /* hero */
+  .hero__container {
+    padding-top: 40px;
+  }
+
+  .hero__wrapper {
+    margin-bottom: 38px;
+    padding: 160px 77px;
+    background-image: url(../images/hero-mobile-bg.jpg);
+  }
+
+  .hero__title {
+    margin-bottom: 19px;
+    font-size: 6rem;
+  }
+
+  .hero__content {
+    max-width: 92%;
+  }
+
+  .hero__descr {
+    margin-bottom: 61px;
+    font-size: 2rem;
+  }
+
+  /* about-us */
+  .about-us__container {
+    margin-bottom: 78px;
+  }
+
+  .about-us__top {
+    max-width: 100%;
+  }
+
+  .about-us__descr {
+    margin-bottom: 60px;
+  }
+
+  .about-us__bottom {
+    --offsets: 0;
+  }
+
+  .about-us__left {
+    margin-right: 0;
+    margin-bottom: 32px;
+    flex-basis: 100%;
+    min-height: 640px;
+  }
+
+  .about-us__right {
+    flex-basis: 100%;
+  }
+
+  .box {
+    padding: 65px 74px;
+  }
+
+  /* stages */
+  .stages__container {
+    margin-bottom: 81px;
+  }
+
+  .stages__picture {
+    flex-basis: 47%;
+  }
+
+  .stages__descr:nth-child(3) {
+    margin-bottom: 23px;
+  }
+
+  /* questions */
+  .questions__container {
+    margin-bottom: 78px;
+  }
+
+  .questions__items {
+    gap: 30px;
+  }
+
+  .questions__item {
+    width: 100%;
+  }
+
+  /* footer */
+  .footer__logo {
+    margin-bottom: 14px;
+  }
+
+  .footer__container {
+    padding-top: 52px;
+    padding-bottom: 45px;
+  }
+
+  .footer__title {
+    padding-left: 3px;
+  }
+
+  .footer__right {
+    display: none;
+  }
+
+  .footer__left {
+    width: 28%;
+  }
+
+  .footer__middle {
+    padding: 0;
+    width: 59%;
+  }
+
+  .form__input {
+    padding: 21px 28px;
+  }
+
+  .form__items {
+    margin-bottom: 28px;
+  }
+
+  .footer__btn {
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* header */
+  .header {
+    padding: 0;
+    padding-top: 17px;
+    padding-bottom: 13px;
+  }
+
+  .header__logo {
+    max-width: 110px;
+  }
+
+  .header__nav {
+    margin-right: 43px;
+  }
+
+  .header__item {
+    font-size: 1.6rem;
+  }
+
+  .header__items {
+    gap: 43px;
+  }
+}

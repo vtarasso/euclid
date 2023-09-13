@@ -129,8 +129,8 @@ img {
 
 .container {
   margin: 0 auto;
-  max-width: 1770px;
-  width: 100%;
+  padding: 0 15px;
+  max-width: 1800px;
 }
 
 /* header */
@@ -230,7 +230,7 @@ img {
 }
 
 /* hero */
-.hero__container {
+.hero__wrapper {
   margin-bottom: 53px;
   padding: 101px 80px;
   border-radius: var(--border-radius);
@@ -241,7 +241,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.hero__wrapper {
+.hero__content {
   max-width: 51%;
   line-height: 1.2;
 }
@@ -281,6 +281,7 @@ img {
 
 .about-us__bottom {
   --offsets: 1;
+  flex-wrap: wrap;
 }
 
 .about-us__left {
@@ -487,7 +488,8 @@ img {
 }
 
 .footer__container {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
   justify-content: space-between;
 }
 
@@ -622,7 +624,6 @@ img {
 }
 
 .footer__btn {
-  margin-right: 22px;
   padding: 20px 52px;
 }
 
@@ -634,6 +635,7 @@ img {
 .footer__check {
   align-items: center;
   flex-wrap: wrap;
+  gap: 22px;
 }
 
 /* custom-checkbox */
