@@ -282,23 +282,32 @@ img {
 .about-us__bottom {
   --offsets: 1;
   flex-wrap: wrap;
+  gap: 32px;
+  width: 100%;
 }
 
 .about-us__left {
   position: relative;
-  align-items: flex-end;
-  margin-right: 32px;
-  flex-basis: 49%;
-  flex-shrink: 0;
-  min-height: 100%;
+  overflow: hidden;
   border-radius: var(--border-radius);
+}
+
+.about-us__image {
+  width: 100%;
+  min-height: 100%;
   background-image: url("../images/about-us-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.about-us__item {
+  width: calc((100% - (32px * var(--offsets))) / (var(--offsets) + 1));
+}
+
 .about-us__box {
+  position: absolute;
+  bottom: 0;
   padding: 50px;
   justify-content: space-between;
   align-items: center;
@@ -346,8 +355,8 @@ img {
 }
 
 .about-us__right {
-  flex-basis: 49%;
   flex-direction: column;
+ 
 }
 
 .box {
@@ -371,11 +380,11 @@ img {
 }
 
 .box__decor--cube {
-  background-image: url("images/about-us-icon-1.svg");
+  background-image: url("../images/about-us-icon-1.svg");
 }
 
-.box__decor--cube {
-  background-image: url("images/about-us-icon-2.svg");
+.box__decor--gear {
+  background-image: url("../images/about-us-icon-2.svg");
 }
 
 /* stages */

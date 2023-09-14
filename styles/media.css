@@ -79,10 +79,7 @@
     --offsets: 0;
   }
 
-  .about-us__left {
-    margin-right: 0;
-    margin-bottom: 32px;
-    flex-basis: 100%;
+  .about-us__image {
     min-height: 640px;
   }
 
@@ -215,7 +212,7 @@
     margin-bottom: 55px;
   }
 
-  .about-us__left {
+  .about-us__image {
     min-height: 651px;
   }
 
@@ -246,7 +243,7 @@
 
   /* stages */
   .stages__title {
-    margin-bottom: 25px;
+    margin-bottom: 31px;
   }
 
   .stages__wrapper {
@@ -300,7 +297,22 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 776px) {
+  .header__items {
+    gap: 23px;
+  }
+
+  .header__nav {
+    margin-right: 26px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  :root {
+    --border-radius: 16px;
+  }
+
   .header__container {
     flex-wrap: wrap;
     gap: 20px;
@@ -310,7 +322,7 @@
     padding: 0;
     padding-top: 24px;
     padding-bottom: 50px;
-}
+  }
 
   .header__nav {
     margin-right: 0;
@@ -320,12 +332,6 @@
 
   .header__items {
     justify-content: space-between;
-  }
-}
-
-@media (max-width: 576px) {
-  :root {
-    --border-radius: 16px;
   }
 
   .section-title {
@@ -388,16 +394,26 @@
   }
 
   /* about-us */
+  .about-us__container {
+    margin-bottom: 61px;
+  }
+
   .about-us__descr {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     font-size: 1.4rem;
   }
 
   .about-us__left {
     position: relative;
-    margin-bottom: 160px;
+    flex-direction: column;
     max-width: 100%;
+    border-radius: 0;
+  }
+
+  .about-us__image {
+    margin-bottom: 10px;
     min-height: 200px;
+    border-radius: var(--border-radius);
   }
 
   .box {
@@ -413,9 +429,9 @@
 
   .box__decor {
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     width: 114px;
-    height: 70px;
+    height: 47px;
     background-position: left center;
   }
 
@@ -428,9 +444,7 @@
   }
 
   .about-us__box {
-    position: absolute;
-    bottom: -130px;
-    left: 0;
+    position: static;
     padding: 0px 0px;
     flex-direction: column;
     align-items: flex-start;
@@ -509,32 +523,7 @@
   .header__nav {
     display: none;
   }
-  /* about-us */
-  .about-us__container {
-    margin-bottom: 61px;
-  }
-
-  .about-us__left {
-    margin-bottom: 220px;
-  }
-
-  .about-us__box {
-    bottom: -200px;
-  }
-
-  .box__decor {
-    margin-bottom: 3px;
-    background-size: 64px 49px;
-  }
-
-  .box__title {
-    letter-spacing: 0.1px;
-  }
-
-  .box:first-child {
-    margin-bottom: 23px;
-  }
-
+  
   /* stages */
   .stages__container {
     margin-bottom: 60px;
